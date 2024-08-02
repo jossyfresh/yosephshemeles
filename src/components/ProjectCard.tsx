@@ -1,7 +1,25 @@
 import { Flex, Stack, Text } from "@mantine/core";
 import React from "react";
+import { Icon } from "@iconify/react";
+import Link from "next/link";
+import { link } from "fs";
 
-export default function ProjectCard() {
+interface ProjectCardProps {
+  direction: boolean;
+  github: string | "";
+  link: string | "";
+  title: string;
+  description: string;
+  technologies: string[];
+}
+export default function ProjectCard({
+  direction = false,
+  link = "",
+  github = "",
+  title,
+  description,
+  technologies,
+}: ProjectCardProps) {
   return (
     <Stack pos={"relative"}>
       <Stack
@@ -9,6 +27,7 @@ export default function ProjectCard() {
         h={300}
         bg={"#303C55"}
         style={{
+          placeSelf: direction ? "end" : "start",
           zIndex: 1,
           borderRadius: "10px",
         }}
@@ -17,54 +36,58 @@ export default function ProjectCard() {
         gap={20}
         pos={"absolute"}
         top={-15}
-        right={0}
-        align="end"
+        align={`${direction ? "start" : "end"}`}
         style={{
+          left: direction ? 0 : "auto",
+          right: direction ? "auto" : 0,
           zIndex: 1000,
         }}
       >
-        <Stack gap={6} align="end">
+        <Stack gap={6} align={`${direction ? "start" : "end"}`}>
           <Text c={"#64ffda"} size="lg">
             Featured Project{" "}
           </Text>
           <Text c={"#ccd6f6"} fw={600} size="25px">
-            AI Face Landmark Detection
+            {title}
           </Text>
         </Stack>
 
-        <Stack w={500} pr={20} py={20} gap={10} bg={"#172a45"}>
+        <Stack w={500} px={20} py={20} gap={10} bg={"#172a45"}>
           <Text
             style={{
-              textAlign: "end",
+              textAlign: direction ? "start" : "end",
             }}
             c={"#a8b2d1"}
           >
-            Facial landmark recognition allows you to detect a number of
-            different points on your face that together make up your eyes,
-            mouth, ears, nose and so on.
-          </Text>
-          <Text
-            style={{
-              textAlign: "end",
-            }}
-            c={"#a8b2d1"}
-          >
-            Inspired by Nicholas Renotte's Youtube Tutorial.
+            {description}
           </Text>
         </Stack>
         <Flex gap={25}>
-          <Text size="sm" c={"#64ffda"}>
-            ReactJS
-          </Text>
-          <Text size="sm" c={"#64ffda"}>
-            Redux
-          </Text>
-          <Text size="sm" c={"#64ffda"}>
-            Styled Components
-          </Text>
-          <Text size="sm" c={"#64ffda"}>
-            Firebase
-          </Text>
+          {technologies?.map((tech, idx) => (
+            <Text key={idx} size="sm" c={"#64ffda"}>
+              {tech}
+            </Text>
+          ))}
+        </Flex>
+        <Flex gap={15}>
+          <Link href={github}>
+            <Icon
+              icon="ant-design:github-outlined"
+              style={{
+                color: "white",
+                fontSize: "25px",
+              }}
+            />
+          </Link>
+          <Link href={link}>
+            <Icon
+              icon="quill:link-out"
+              style={{
+                color: "white",
+                fontSize: "25px",
+              }}
+            />
+          </Link>
         </Flex>
       </Stack>
     </Stack>

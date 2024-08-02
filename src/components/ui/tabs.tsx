@@ -9,94 +9,95 @@ type Tab = {
   value: string;
   content?: string | React.ReactNode | any;
 };
-
 export const Tabs = ({
   tabs: propTabs,
   containerClassName,
   activeTabClassName,
   tabClassName,
   contentClassName,
+  setactive,
 }: {
   tabs: Tab[];
   containerClassName?: string;
   activeTabClassName?: string;
   tabClassName?: string;
   contentClassName?: string;
+  setactive: (val: number) => void;
 }) => {
   const [active, setActive] = useState<Tab>(propTabs[0]);
   const [tabs, setTabs] = useState<Tab[]>(propTabs);
 
   const moveSelectedTabToTop = (idx: number) => {
+    console.log(idx);
     const newTabs = [...propTabs];
     const selectedTab = newTabs.splice(idx, 1);
     newTabs.unshift(selectedTab[0]);
     setTabs(newTabs);
     setActive(newTabs[0]);
+    setactive(idx);
   };
 
   const [hovering, setHovering] = useState(false);
   const [hoveredTab, setHoveredTab] = useState<Tab | null>(null);
 
   return (
-    <div className="flex px-7 py-5 ">
-      <div
-        className={cn(
-          "flex flex-col items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
-          containerClassName
-        )}
-      >
-        {propTabs.map((tab, idx) => (
-          <button
-            key={tab.title}
-            onClick={() => {
-              moveSelectedTabToTop(idx);
-            }}
-            onMouseEnter={() => {
-              setHovering(true);
-              setHoveredTab(tab);
-            }}
-            onMouseLeave={() => {
-              setHovering(false);
-              setHoveredTab(null);
-            }}
-            className={cn(
-              `relative px-4 py-3 w-52 hover:bg-[#172a45]  ${
-                tab === active
-                  ? "border-l-2 border-[#64ffda]"
-                  : "border-l-2 border-[#303C55]"
-              } `,
-              tabClassName
-            )}
-            style={{
-              transformStyle: "preserve-3d",
-            }}
-          >
-            {active.value === tab.value && (
-              <motion.div
-                layoutId="clickedbutton"
-                transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
-                className={cn(
-                  "absolute inset-0  dark:bg-zinc-800 ",
-                  activeTabClassName
-                )}
-              />
-            )}
+    <>
+      <div className="flex px-7 py-5 ">
+        <div
+          className={cn(
+            "flex flex-col items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+            containerClassName
+          )}
+        >
+          {propTabs.map((tab, idx) => (
+            <button
+              key={tab.title}
+              onClick={() => {
+                moveSelectedTabToTop(idx);
+              }}
+              onMouseEnter={() => {
+                setHovering(true);
+                setHoveredTab(tab);
+              }}
+              onMouseLeave={() => {
+                setHovering(false);
+                setHoveredTab(null);
+              }}
+              className={cn(
+                `relative px-4 py-3 w-52 hover:bg-[#172a45]`,
+                tabClassName
+              )}
+              style={{
+                transformStyle: "preserve-3d",
+              }}
+            >
+              {active.value === tab.value && (
+                <motion.div
+                  layoutId="clickedbutton"
+                  transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
+                  className={cn(
+                    `absolute inset-0 dark:bg-zinc-800 border-l-2 border-[#64ffda]`,
+                    activeTabClassName
+                  )}
+                />
+              )}
 
-            <div className=" flex">
-              <span
-                className={` relative block hover:text-[#64ffda] ${
-                  active === tab ? "text-[#64ffda]" : "text-[#a8b2d1]"
-                } ${
-                  hoveredTab && "text-[#64ffda]"
-                } w-full text-start text-md font-extralight`}
-              >
-                {tab.title}
-              </span>
-            </div>
-          </button>
-        ))}
+              <div className=" flex">
+                <span
+                  className={` relative block hover:text-[#64ffda] ${
+                    active === tab ? "text-[#64ffda]" : "text-[#a8b2d1]"
+                  } ${
+                    hoveredTab && "text-[#64ffda]"
+                  } w-full text-start text-md font-extralight`}
+                >
+                  {tab.title}
+                </span>
+              </div>
+            </button>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

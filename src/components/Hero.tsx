@@ -5,13 +5,13 @@ export default function Hero() {
   return (
     <Stack gap={50}>
       <Stack gap={30}>
-        <Text c={"#64ffda"} size="20px">
+        <Text c={"#64ffda"} size="20px" className="font-SFMonoRegular">
           Hello, my name is
         </Text>
-        <Text c={"#e6f1ff"} size="70px" fw={600}>
+        <Text c={"#ccd6f6"} size="50px" fw={800}>
           Yoseph Shemeles
         </Text>
-        <Text c={"#8892b0"} size="70px" fw={600}>
+        <Text c={"#8892b0"} size="50px" fw={800}>
           I love exploring new things!
         </Text>
       </Stack>
@@ -25,9 +25,9 @@ export default function Hero() {
             lineHeight: "1.5",
           }}
         >
-          I'm a Final Year Software Engineering Student at Addis Ababa Science
-          and Technology University (AASTU) Addis Ababa, Ethiopia. Primarily
-          interested in Full-Stack Web Development and ML.
+          I&apos;m a Final Year Software Engineering Student at Addis Ababa
+          Science and Technology University (AASTU) Addis Ababa, Ethiopia.
+          Primarily interested in Full-Stack Web Development and ML.
         </Text>
         <Text
           w={"70%"}

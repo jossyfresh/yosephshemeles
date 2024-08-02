@@ -22,6 +22,14 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        SFMono: [
+            "SFMonoRegular",
+            "SFMonoThin",
+            "SFMonoBlack",
+            "SFMonoRegular",
+        ],
+    },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

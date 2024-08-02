@@ -8,18 +8,17 @@ export default function WorkHistory() {
     <Stack>
       <Flex gap={20} align={"center"} px={30}>
         <Flex align={"end"} gap={12}>
-          <Flex>
+          <Flex gap={0}>
             <Text c={"#64ffda"} size="20px">
               02.{" "}
               <span
                 color="#e6f1ff"
                 style={{
-                  paddingLeft: "7px",
                   color: "#e6f1ff",
-                  fontSize: "30px",
+                  fontSize: "24px",
                 }}
               >
-                Where I've Worked
+                Where I&apos;ve Worked
               </span>
             </Text>
           </Flex>
