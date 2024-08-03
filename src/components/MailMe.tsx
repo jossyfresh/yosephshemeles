@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Flex, Stack, Text } from "@mantine/core";
+import Link from "next/link";
 
 export default function MailMe() {
   return (
@@ -38,17 +39,19 @@ export default function MailMe() {
           me about any relevant job updates.
         </Text>
       </Stack>
-      <Button
-        h={50}
-        variant="outline"
-        c={"#64ffda"}
-        style={{
-          fontSize: "18px",
-          border: "1px solid #64ffda",
-        }}
-      >
-        Mail Me
-      </Button>
+      <Link href={"mailto:shemelesyoseph1994@gmail.com"}>
+        <Button
+          h={50}
+          variant="outline"
+          c={"#64ffda"}
+          style={{
+            fontSize: "18px",
+            border: "1px solid #64ffda",
+          }}
+        >
+          Mail Me
+        </Button>
+      </Link>
     </Stack>
   );
 }

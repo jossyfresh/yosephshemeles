@@ -1,5 +1,6 @@
 import React from "react";
 import { Stack, Text, Button } from "@mantine/core";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -41,17 +42,19 @@ export default function Hero() {
           I enjoy learning new skills and implementing them in real life!
         </Text>
       </Stack>
-      <Button
-        h={60}
-        variant="outline"
-        w={160}
-        c={"#64ffda"}
-        style={{
-          border: "1px solid #64ffda",
-        }}
-      >
-        Get In Touch
-      </Button>
+      <Link href={"mailto:shemelesyoseph1994@gmail.com"}>
+        <Button
+          h={60}
+          variant="outline"
+          w={160}
+          c={"#64ffda"}
+          style={{
+            border: "1px solid #64ffda",
+          }}
+        >
+          Get In Touch
+        </Button>
+      </Link>
     </Stack>
   );
 }

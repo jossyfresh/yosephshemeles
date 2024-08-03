@@ -5,7 +5,7 @@ import { TabsDemo } from "./Tabs";
 
 export default function WorkHistory() {
   return (
-    <Stack>
+    <Stack id="Experience">
       <Flex gap={20} align={"center"} px={30}>
         <Flex align={"end"} gap={12}>
           <Flex gap={0}>

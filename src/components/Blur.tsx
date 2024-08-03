@@ -1,63 +1,62 @@
 "use client";
 import BlurFade from "@/components/ui/blurfade";
-import { Box, Flex, Stack, Text } from "@mantine/core";
+import { Box, Flex, SimpleGrid, Stack, Text } from "@mantine/core";
 import { useState } from "react";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import Link from "next/link";
 
 const ProjectsData = [
   {
     id: 1,
-    title: "Project 1",
+    title: "Online Peer Mentoring",
     description:
-      "Facial landmark recognition allows you to detect a number of different points on your face that together make up your eyes, mouth, ears, nose and so on.Inspired by Nicholas Renotte's Youtube Tutorial.",
-    technologies: ["React", "TypeScript"],
-    github: "https://github.com",
-    link: "https://github.com",
+      "a platform where students can connect with mentors and get mentorship",
+    technologies: ["React", "TypeScript", "Firebase"],
+    github: "https://github.com/yidyetebeje/mavericks-online-mentoring-program",
+    link: "https://github.com/yidyetebeje/mavericks-online-mentoring-program",
   },
   {
     id: 2,
-    title: "Project 2",
-    description:
-      "Facial landmark recognition allows you to detect a number of different points on your face that together make up your eyes, mouth, ears, nose and so on.Inspired by Nicholas Renotte's Youtube Tutorial.",
+    title: "YAYA Construction",
+    description: "A Detailed website for a construction company called YAYA",
     technologies: ["React", "TypeScript"],
-    github: "https://github.com",
-    link: "https://github.com",
+    github: "https://github.com/jossyfresh/WebSite",
+    link: "https://yaya-construction.vercel.app/",
   },
   {
     id: 3,
-    title: "Project 2",
+    title: "Portfolio Website",
     description:
-      "Facial landmark recognition allows you to detect a number of different points on your face that together make up your eyes, mouth, ears, nose and so on.Inspired by Nicholas Renotte's Youtube Tutorial.",
-    technologies: ["React", "TypeScript"],
-    github: "https://github.com",
-    link: "https://github.com",
+      "Personal portfolio website to showcase my projects and skills",
+    technologies: ["TypeScript", "Next.js", "Frame Motion"],
+    github: "https://github.com/jossyfresh/yosephshemeles",
+    link: "https://yosephshemeles.vercel.app/",
   },
   {
     id: 4,
-    title: "Project 2",
+    title: "Eathub",
     description:
-      "Facial landmark recognition allows you to detect a number of different points on your face that together make up your eyes, mouth, ears, nose and so on.Inspired by Nicholas Renotte's Youtube Tutorial.",
+      "Mobile application that allows users to view restaurants menus",
     technologies: ["React", "TypeScript"],
-    github: "https://github.com",
-    link: "https://github.com",
+    github: "https://github.com/jossyfresh/eat-hub",
+    link: "https://github.com/jossyfresh/eat-hub",
   },
   {
     id: 5,
-    title: "Project 2",
-    description:
-      "Facial landmark recognition allows you to detect a number of different points on your face that together make up your eyes, mouth, ears, nose and so on.Inspired by Nicholas Renotte's Youtube Tutorial.",
-    technologies: ["React", "TypeScript"],
-    github: "https://github.com",
-    link: "https://github.com",
+    title: "Urban AgriTech",
+    description: "An IoT project that helps farmers monitor their crops",
+    technologies: ["Arduino", "Python", "Scikit-learn"],
+    github: "https://github.com/jossyfresh/Urban-Agri-Tech",
+    link: "https://github.com/jossyfresh/Urban-Agri-Tech",
   },
   {
     id: 6,
-    title: "Project 2",
+    title: "Contest central",
     description:
-      "Facial landmark recognition allows you to detect a number of different points on your face that together make up your eyes, mouth, ears, nose and so on.Inspired by Nicholas Renotte's Youtube Tutorial.",
+      "A Dashboard for managing contests and contest results for a company",
     technologies: ["React", "TypeScript"],
-    github: "https://github.com",
-    link: "https://github.com",
+    github: "https://github.com/jossyfresh/contest-central",
+    link: "https://github.com/jossyfresh/contest-central",
   },
 ];
 
@@ -65,7 +64,7 @@ export function ProjecLists() {
   const [hovered, setHovered] = useState(10);
   return (
     <section id="photos">
-      <div className="columns-2 gap-8 sm:columns-3 space-y-8 px-14">
+      <SimpleGrid cols={{ lg: 3, md: 2, sm: 2, xs: 1 }}>
         {ProjectsData.map((project) => (
           <BlurFade key={project.id} delay={0.25 + project.id * 0.05} inView>
             <Stack
@@ -94,26 +93,29 @@ export function ProjecLists() {
                   }}
                 />
                 <Flex gap={10} align={"center"}>
-                  <Icon
-                    icon="ant-design:github-outlined"
-                    style={{
-                      color: "white",
-                      fontSize: "25px",
-                    }}
-                  />
-
-                  <Icon
-                    icon="quill:link-out"
-                    style={{
-                      color: "white",
-                      fontSize: "25px",
-                    }}
-                  />
+                  <Link href={project.github}>
+                    <Icon
+                      icon="ant-design:github-outlined"
+                      style={{
+                        color: "white",
+                        fontSize: "25px",
+                      }}
+                    />
+                  </Link>
+                  <Link href={project.link}>
+                    <Icon
+                      icon="quill:link-out"
+                      style={{
+                        color: "white",
+                        fontSize: "25px",
+                      }}
+                    />
+                  </Link>
                 </Flex>
               </Flex>
               <Stack gap={20}>
                 <Text size="20px" c={"#ccd6f6"} fw={600}>
-                  Voter Registration WebApp
+                  {project.title}
                 </Text>
                 <Text
                   w={"85%"}
@@ -123,24 +125,20 @@ export function ProjecLists() {
                     lineHeight: "1.5",
                   }}
                 >
-                  Project 4 under HTML-CSS Suven Coding Internship
+                  {project.description}
                 </Text>
               </Stack>
               <Flex gap={20}>
-                <Text size="sm" c={"#64ffda"}>
-                  HTML
-                </Text>
-                <Text size="sm" c={"#64ffda"}>
-                  CSS
-                </Text>
-                <Text size="sm" c={"#64ffda"}>
-                  Javascript
-                </Text>
+                {project.technologies?.map((tech, idx) => (
+                  <Text size="sm" c={"#64ffda"}>
+                    {tech}
+                  </Text>
+                ))}
               </Flex>
             </Stack>
           </BlurFade>
         ))}
-      </div>
+      </SimpleGrid>
     </section>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 import { Stack, Flex, Text, Image, Button } from "@mantine/core";
-import { Link } from "react-scroll";
+import Link from "next/link";
 import React, { useRef, useState } from "react";
 
 export default function Navbar() {
@@ -25,7 +25,7 @@ export default function Navbar() {
           zIndex: 1000,
         }}
       >
-        <Link to="/contact">
+        <Link href="#about">
           <Flex gap={5}>
             <Text c={"#64ffda"} size={"xs"} style={{}}>
               01.
@@ -38,7 +38,7 @@ export default function Navbar() {
             </Text>
           </Flex>
         </Link>
-        <Link to="/contact">
+        <Link href="#Experience">
           <Flex gap={5}>
             <Text c={"#64ffda"} size={"xs"}>
               02.
@@ -51,7 +51,7 @@ export default function Navbar() {
             </Text>
           </Flex>
         </Link>
-        <Link to="/contact">
+        <Link href="#Projects">
           <Flex gap={5}>
             <Text c={"#64ffda"} size={"xs"}>
               03.
@@ -64,7 +64,7 @@ export default function Navbar() {
             </Text>
           </Flex>
         </Link>
-        <Link to="#contact" smooth duration={100}>
+        <Link href="#contact">
           <Flex gap={5}>
             <Text size={"xs"} c={"#64ffda"}>
               04.
@@ -77,16 +77,18 @@ export default function Navbar() {
             </Text>
           </Flex>
         </Link>
-        <Button
-          h={40}
-          variant="outline"
-          c={"#64ffda"}
-          style={{
-            border: "1px solid #64ffda",
-          }}
-        >
-          Resume
-        </Button>
+        <Link href="https://drive.google.com/file/d/10qoeY7TlbAChHpFP8VP6R-ol8FWbk9sN/view?usp=sharing">
+          <Button
+            h={40}
+            variant="outline"
+            c={"#64ffda"}
+            style={{
+              border: "1px solid #64ffda",
+            }}
+          >
+            Resume
+          </Button>
+        </Link>
       </Flex>
     </Flex>
   );

@@ -38,9 +38,7 @@ export default function Home() {
         >
           <Hero />
           <About />
-
           <Skills />
-
           <Stack justify="center" align="center">
             <WorkHistory />
           </Stack>
@@ -50,7 +48,7 @@ export default function Home() {
       </BlurFade>
       <ProjectList />
       <Stack align="center" gap={200}>
-        <Achivements />
+        {/* <Achivements /> */}
         <MailMe />
         <Footer />
       </Stack>

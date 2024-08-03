@@ -1,6 +1,7 @@
 import { Stack, Text } from "@mantine/core";
 import React from "react";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import Link from "next/link";
 
 export default function RightSidebar() {
   return (
@@ -22,9 +23,11 @@ export default function RightSidebar() {
             transform: "rotate(90deg)",
           }}
         >
-          <Text size="24px" c={"#64ffda"}>
-            shemelesyoseph1994@gmail.com
-          </Text>
+          <Link href={"mailto:shemelesyoseph1994@gmail.com"}>
+            <Text size="24px" c={"#64ffda"}>
+              shemelesyoseph1994@gmail.com
+            </Text>
+          </Link>
         </Stack>
         <Stack
           align="center"

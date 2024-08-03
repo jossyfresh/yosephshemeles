@@ -5,49 +5,53 @@ import ProjectCard from "./ProjectCard";
 const ProjectsData = [
   {
     id: 1,
-    title: "Project 1",
+    title: "Eskalate",
     description:
-      "Face Mask Detection system to automatically detect the face masks on people in real time through webcams. Own custom dataset was built using Bing Search API and Kaggle. Achieved 95% accuracy in all mask colors; managed to improve efficiency in all lighting conditions",
-    technologies: ["React", "TypeScript", "Python", "Tensorflow"],
-    github: "https://github.com",
-    link: "https://github.com",
+      "During my internship at A2SV, I contributed to the Eskalate project, a platform designed to connect companies with top African talent. My role involved developing features, improving user experience and user interface design",
+    technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
+    github: "https://github.com/A2SV",
+    imagepath: "/Eskalate/cover.png",
+    link: "https://eskalate.io",
     direction: true,
   },
   {
     id: 2,
-    title: "Project 2",
+    title: "Vertex",
     description:
-      "Built Disney+ Clone with React JS with Google account's Sign in feature. Styled to get 15+ movies made by Disney; clickable images to get details of the specific movie.Inspired by Clever Programmer's Youtube Channel.",
-    technologies: ["React", "TypeScript"],
-    github: "https://github.com",
-    link: "https://github.com",
+      "Developing an interview preparation platform, streamlining the process with interactive topics and course and also set of practice problems. Contributing to enhancing user experience and optimizing content for effective interview coaching. It is still in development.",
+    technologies: ["Redux", "TypeScript", "Next.js", "Tailwind CSS"],
+    github: "https://github.com/A2SV",
+    imagepath: "/Vertex/cover.png",
+    link: "https://vertex-rho.vercel.app",
     direction: false,
   },
   {
     id: 3,
-    title: "Project 2",
+    title: "A2SV Community Portal",
     description:
-      "Designed and implemented React-based Web Application to monitor live corona cases, recoveries, and deaths(clickable tabs) in 180+ countries worldwide. Directed to display 2 features – worldwide cases and countries based report; clickable markers on the map to show country stats and line chart for fluctuations over days, on hover, gives exact figures",
-    technologies: ["React", "TypeScript"],
-    github: "https://github.com",
-    link: "https://github.com",
+      "Developed a community portal for A2SV, incorporating features such as forums and a blog section. Enhanced user engagement and information sharing through interactive discussions and valuable content contributions",
+    technologies: ["Redux", "TypeScript", "Next.js", "Tailwind CSS"],
+    github: "https://github.com/jossyfresh/a2sv-community-portal",
+    imagepath: "/CommunityPortal/cover.png",
+    link: "https://a2sv-comminty-portal.vercel.app/",
     direction: true,
   },
   {
     id: 4,
-    title: "Project 2",
+    title: "YAYA Academy",
     description:
-      "Facial landmark recognition allows you to detect a number of different points on your face that together make up your eyes, mouth, ears, nose and so on.Inspired by Nicholas Renotte's Youtube Tutorial.",
-    technologies: ["React", "TypeScript"],
-    github: "https://github.com",
-    link: "https://github.com",
+      "Designed and implemented an LMS for construction studies, enhancing learning with interactive, industry-specific courses. Improved course management and user engagement, resulting in better learning outcomes and certifications.",
+    technologies: ["Redux", "TypeScript", "Next.js", "Node.js"],
+    github: "https://github.com/jossyfresh/web-project",
+    imagepath: "/YAYA Academy/cover.png",
+    link: "https://yaya-academy.vercel.app/",
     direction: false,
   },
 ];
 
 export default function Projects() {
   return (
-    <Stack gap={150}>
+    <Stack gap={150} id="Projects">
       <Flex gap={20} align={"center"}>
         <Flex align={"end"} gap={12}>
           <Flex gap={0}>
@@ -85,6 +89,7 @@ export default function Projects() {
             github={project.github}
             link={project.link}
             direction={project.direction}
+            imagepath={project.imagepath}
           />
         ))}
       </Stack>

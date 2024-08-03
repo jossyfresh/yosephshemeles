@@ -1,4 +1,4 @@
-import { Flex, Stack, Text } from "@mantine/core";
+import { Flex, Image, Stack, Text } from "@mantine/core";
 import React from "react";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
@@ -11,6 +11,7 @@ interface ProjectCardProps {
   title: string;
   description: string;
   technologies: string[];
+  imagepath: string;
 }
 export default function ProjectCard({
   direction = false,
@@ -19,19 +20,31 @@ export default function ProjectCard({
   title,
   description,
   technologies,
+  imagepath,
 }: ProjectCardProps) {
   return (
     <Stack pos={"relative"}>
       <Stack
         w={600}
-        h={300}
+        h={290}
         bg={"#303C55"}
         style={{
           placeSelf: direction ? "end" : "start",
           zIndex: 1,
           borderRadius: "10px",
         }}
-      ></Stack>
+      >
+        <img
+          style={{
+            objectFit: "contain",
+            borderRadius: "5px",
+          }}
+          src={imagepath}
+          alt=""
+          width={"100%"}
+          height={300}
+        />
+      </Stack>
       <Stack
         gap={20}
         pos={"absolute"}
@@ -52,7 +65,16 @@ export default function ProjectCard({
           </Text>
         </Stack>
 
-        <Stack w={500} px={20} py={20} gap={10} bg={"#172a45"}>
+        <Stack
+          w={500}
+          px={20}
+          py={20}
+          gap={10}
+          bg={"#172a45"}
+          style={{
+            borderRadius: "5px",
+          }}
+        >
           <Text
             style={{
               textAlign: direction ? "start" : "end",
@@ -79,7 +101,7 @@ export default function ProjectCard({
               }}
             />
           </Link>
-          <Link href={link}>
+          <Link href={link} target="_blank">
             <Icon
               icon="quill:link-out"
               style={{

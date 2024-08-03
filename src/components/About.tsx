@@ -7,7 +7,7 @@ export default function About() {
     <Stack gap={50}>
       <Flex gap={20} align={"center"}>
         <Flex align={"end"} gap={12}>
-          <Flex gap={0}>
+          <Flex gap={0} id="about">
             <Text c={"#64ffda"} size="20px">
               01.{" "}
               <span

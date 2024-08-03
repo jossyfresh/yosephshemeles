@@ -14,28 +14,34 @@ export default function Footer() {
         </Link>
       </Stack>
       <Flex gap={14}>
-        <Icon
-          icon="ant-design:github-outlined"
-          style={{
-            color: "#64ffda",
+        <Link href={"https://github.com/jossyfresh/"}>
+          <Icon
+            icon="ant-design:github-outlined"
+            style={{
+              color: "#64ffda",
 
-            fontSize: "25px",
-          }}
-        />
-        <Icon
-          icon="jam:linkedin"
-          style={{
-            color: "#64ffda",
-            fontSize: "25px",
-          }}
-        />
-        <Icon
-          icon="mingcute:telegram-fill"
-          style={{
-            color: "#64ffda",
-            fontSize: "25px",
-          }}
-        />
+              fontSize: "25px",
+            }}
+          />
+        </Link>
+        <Link href={"https://www.linkedin.com/in/yosephshemeles/"}>
+          <Icon
+            icon="jam:linkedin"
+            style={{
+              color: "#64ffda",
+              fontSize: "25px",
+            }}
+          />
+        </Link>
+        <Link href={"https://t.me/My_chorus"}>
+          <Icon
+            icon="mingcute:telegram-fill"
+            style={{
+              color: "#64ffda",
+              fontSize: "25px",
+            }}
+          />
+        </Link>
         <Icon
           icon="hugeicons:instagram"
           style={{
