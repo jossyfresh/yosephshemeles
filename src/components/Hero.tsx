@@ -42,7 +42,7 @@ export default function Hero() {
           I enjoy learning new skills and implementing them in real life!
         </Text>
       </Stack>
-      <Link href={"mailto:shemelesyoseph1994@gmail.com"}>
+      <Link href={"https://www.upwork.com/freelancers/~0102e0b85eb469f383"}>
         <Button
           h={60}
           variant="outline"
@@ -52,7 +52,7 @@ export default function Hero() {
             border: "1px solid #64ffda",
           }}
         >
-          Get In Touch
+          Hire Me
         </Button>
       </Link>
     </Stack>

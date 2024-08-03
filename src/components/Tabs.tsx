@@ -29,7 +29,9 @@ export function TabsDemo() {
                   color: "#64ffda",
                 }}
               >
-                @A2SV
+                <a href="https://a2sv.org" target="_blank">
+                  @A2SV
+                </a>
               </span>
             </Text>
             <Text size="sm" c={"#64ffda"}>
@@ -38,7 +40,7 @@ export function TabsDemo() {
           </Stack>
           <Stack w={"100%"} pl={20}>
             <Flex gap={10} w={"100%"}>
-              <Stack w={"4%"} h={20}>
+              <Stack w={"4%"} h={20} pt={4}>
                 <Icon
                   icon="icon-park-solid:right-one"
                   style={{ color: "#64ffda" }}
@@ -46,8 +48,23 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Informed how MUNs enhance - Negotiation, Diplomacy,
-                  Leadership, etc. for increasing the sales of the
+                  Interend in as a software developer and mentor at A2SV, a
+                  company that provides opportunities for African developers to
+                  learn and grow in the tech industry.
+                </Text>
+              </Stack>
+            </Flex>
+            <Flex gap={10} w={"100%"}>
+              <Stack w={"4%"} h={20} pt={4}>
+                <Icon
+                  icon="icon-park-solid:right-one"
+                  style={{ color: "#64ffda" }}
+                />
+              </Stack>
+              <Stack w={"96%"}>
+                <Text c={"#a8b2d1"} size="sm">
+                  Participated in the development of a web-based platform for
+                  community of A2SV
                 </Text>
               </Stack>
             </Flex>
@@ -60,8 +77,9 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Promoted IMUN Online Conferences in different
-                  schools/universities and got 10+ registrations.
+                  Delivered lectures on data structures and algorithms,
+                  improving participants&apos; understanding and application of
+                  core concepts.
                 </Text>
               </Stack>
             </Flex>
@@ -74,21 +92,8 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Promoted IMUN Online Conferences in different
-                </Text>
-              </Stack>
-            </Flex>
-            <Flex gap={10} w={"100%"}>
-              <Stack w={"4%"} h={20}>
-                <Icon
-                  icon="icon-park-solid:right-one"
-                  style={{ color: "#64ffda" }}
-                />
-              </Stack>
-              <Stack w={"96%"}>
-                <Text c={"#a8b2d1"} size="sm">
-                  Promoted IMUN Online Conferences in different
-                  schools/universities
+                  Facilitated workshops and discussion sessions, fostering a
+                  collaborative learning environment within the community.
                 </Text>
               </Stack>
             </Flex>
@@ -111,17 +116,10 @@ export function TabsDemo() {
         >
           <Stack gap={5} px={4}>
             <Text size="22px" c={"#e6f1ff"}>
-              Software Developer and Mentor{" "}
-              <span
-                style={{
-                  color: "#64ffda",
-                }}
-              >
-                @A2SV
-              </span>
+              Software Engineering Intern{" "}
             </Text>
             <Text size="sm" c={"#64ffda"}>
-              Dec 2022 - Present
+              July 2023 - Present
             </Text>
           </Stack>
           <Stack w={"100%"} pl={20}>
@@ -134,8 +132,8 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Informed how MUNs enhance - Negotiation, Diplomacy,
-                  Leadership, etc. for increasing the sales of the
+                  Led a team of web developer to build a web-based platform for
+                  interview preparation purpose
                 </Text>
               </Stack>
             </Flex>
@@ -148,8 +146,9 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Promoted IMUN Online Conferences in different
-                  schools/universities and got 10+ registrations.
+                  Participated in the development of a web-based platform for
+                  connceting afirca&apos;s talented developers with the
+                  world&apos;s top tech companies
                 </Text>
               </Stack>
             </Flex>
@@ -162,7 +161,8 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Promoted IMUN Online Conferences in different
+                  Learned and worked in new technologies and tools to improve my
+                  skills and knowledge in software development.
                 </Text>
               </Stack>
             </Flex>
@@ -175,8 +175,8 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Promoted IMUN Online Conferences in different
-                  schools/universities
+                  Collaborated with team members to develop new features and
+                  improve existing ones.
                 </Text>
               </Stack>
             </Flex>
@@ -199,17 +199,10 @@ export function TabsDemo() {
         >
           <Stack gap={5} px={4}>
             <Text size="22px" c={"#e6f1ff"}>
-              Software Developer and Mentor{" "}
-              <span
-                style={{
-                  color: "#64ffda",
-                }}
-              >
-                @A2SV
-              </span>
+              Front-End Web Developer
             </Text>
             <Text size="sm" c={"#64ffda"}>
-              Dec 2022 - Present
+              June 2024 - Present
             </Text>
           </Stack>
           <Stack w={"100%"} pl={20}>
@@ -222,8 +215,7 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Informed how MUNs enhance - Negotiation, Diplomacy,
-                  Leadership, etc. for increasing the sales of the
+                  Participated in the development of a crypto currency wallet
                 </Text>
               </Stack>
             </Flex>
@@ -236,8 +228,8 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Promoted IMUN Online Conferences in different
-                  schools/universities and got 10+ registrations.
+                  Collaborated with team members to develop new features and
+                  improve existing ones.
                 </Text>
               </Stack>
             </Flex>
@@ -250,21 +242,8 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Promoted IMUN Online Conferences in different
-                </Text>
-              </Stack>
-            </Flex>
-            <Flex gap={10} w={"100%"}>
-              <Stack w={"4%"} h={20}>
-                <Icon
-                  icon="icon-park-solid:right-one"
-                  style={{ color: "#64ffda" }}
-                />
-              </Stack>
-              <Stack w={"96%"}>
-                <Text c={"#a8b2d1"} size="sm">
-                  Promoted IMUN Online Conferences in different
-                  schools/universities
+                  Learned and worked in new technologies and tools to improve my
+                  skills and knowledge in software development.
                 </Text>
               </Stack>
             </Flex>
@@ -286,18 +265,17 @@ export function TabsDemo() {
           }}
         >
           <Stack gap={5} px={4}>
-            <Text size="22px" c={"#e6f1ff"}>
-              Software Developer and Mentor{" "}
-              <span
-                style={{
-                  color: "#64ffda",
-                }}
-              >
-                @A2SV
-              </span>
+            <Text
+              size="22px"
+              c={"#e6f1ff"}
+              style={{
+                lineHeight: "1.3",
+              }}
+            >
+              Google Developer Students Club Web Dev Mentor{" "}
             </Text>
             <Text size="sm" c={"#64ffda"}>
-              Dec 2022 - Present
+              Nov 2023 - May 2024
             </Text>
           </Stack>
           <Stack w={"100%"} pl={20}>
@@ -310,8 +288,8 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Informed how MUNs enhance - Negotiation, Diplomacy,
-                  Leadership, etc. for increasing the sales of the
+                  Gave Lectures on Web Development and React Library to 100+
+                  students
                 </Text>
               </Stack>
             </Flex>
@@ -324,8 +302,8 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Promoted IMUN Online Conferences in different
-                  schools/universities and got 10+ registrations.
+                  Also mentored students on how to build projects using React
+                  library and other web technologies
                 </Text>
               </Stack>
             </Flex>
@@ -338,7 +316,8 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Promoted IMUN Online Conferences in different
+                  Gave advices to students on how to improve their skills and
+                  how to get started in the tech industry
                 </Text>
               </Stack>
             </Flex>
@@ -351,7 +330,8 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Promoted IMUN Online Conferences in different schools/u
+                  Help a group of students to build a project using React for a
+                  hackathon
                 </Text>
               </Stack>
             </Flex>

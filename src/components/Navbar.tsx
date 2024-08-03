@@ -15,9 +15,11 @@ export default function Navbar() {
         zIndex: 1000,
       }}
     >
-      <Stack>
-        <Image src={"/logo3.svg"} alt="" w={50} h={50} />
-      </Stack>
+      <Link href="/">
+        <Stack>
+          <Image src={"/logo3.svg"} alt="" w={50} h={50} />
+        </Stack>
+      </Link>
       <Flex
         gap={50}
         align={"center"}

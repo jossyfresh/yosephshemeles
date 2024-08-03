@@ -130,7 +130,7 @@ export function ProjecLists() {
               </Stack>
               <Flex gap={20}>
                 {project.technologies?.map((tech, idx) => (
-                  <Text size="sm" c={"#64ffda"}>
+                  <Text key={idx} size="sm" c={"#64ffda"}>
                     {tech}
                   </Text>
                 ))}

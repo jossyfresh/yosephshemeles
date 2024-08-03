@@ -60,13 +60,7 @@ export default function RootLayout({
         <StarsBackground />
         <MantineProvider>
           <Navbar />
-
-          <Flex
-            w={"100%"}
-            style={{
-              overflow: "hidden",
-            }}
-          >
+          <Flex>
             <LeftSidebar />
             {children}
             <RightSidebar />
