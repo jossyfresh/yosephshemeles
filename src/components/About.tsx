@@ -4,10 +4,10 @@ import React from "react";
 
 export default function About() {
   return (
-    <Stack gap={50}>
+    <Stack gap={50} id="about" py={120}>
       <Flex gap={20} align={"center"}>
         <Flex align={"end"} gap={12}>
-          <Flex gap={0} id="about">
+          <Flex gap={0}>
             <Text c={"#64ffda"} size="20px">
               01.{" "}
               <span
@@ -15,8 +15,7 @@ export default function About() {
                 style={{
                   color: "#e6f1ff",
                   fontSize: "24px",
-                }}
-              >
+                }}>
                 About Me
               </span>
             </Text>
@@ -27,8 +26,7 @@ export default function About() {
             w={400}
             style={{
               border: "0.5px solid #303C55",
-            }}
-          ></Stack>
+            }}></Stack>
         </Stack>
       </Flex>
       {/* content */}
@@ -40,10 +38,9 @@ export default function About() {
           fw={400}
           style={{
             lineHeight: "1.5",
-          }}
-        >
-          Hello! I&apos;m Yoseph Shemeles, from Addis Ababa Ethiopia, The
-          capital City of Africa Union
+          }}>
+          Hey! I&apos;m Yoseph Shemeles, a software engineer based in Addis
+          Ababa, Ethiopia.
         </Text>
         <Text
           w={"57%"}
@@ -52,12 +49,11 @@ export default function About() {
           fw={400}
           style={{
             lineHeight: "1.5",
-          }}
-        >
-          I am a creative, time punctual, dedicated, goal-oriented individual
-          with decent moral Values and Ethicates along with a high-energy level,
-          honed communication skills, strong organizational skills, and
-          meticulous attention to detail.
+          }}>
+          I&apos;m passionate about building real-world solutions through code.
+          Over the years, I&apos;ve worked across web development, automation,
+          and problem-solving — always focused on writing clean, efficient, and
+          scalable code.
         </Text>
         <Text
           w={"57%"}
@@ -66,13 +62,12 @@ export default function About() {
           fw={400}
           style={{
             lineHeight: "1.5",
-          }}
-        >
-          I am pursuing my Bachelors from Addis Ababa Science and Technology
-          University, in Software Engineering (2021-2025) my current GPA is 3.5
-          out of 4.
+          }}>
+          I love working with great teams, learning new tools, and turning ideas
+          into working products. Whether it&apos;s a solo build or a team
+          collaboration, I&apos;m all about delivering with clarity and
+          consistency.
         </Text>
-
         <Text
           w={"57%"}
           c={"#8892b0"}
@@ -80,65 +75,48 @@ export default function About() {
           fw={400}
           style={{
             lineHeight: "1.5",
-          }}
-        >
-          Here are a few of the other activities that I love to do!
+          }}>
+          Some things I enjoy:
         </Text>
         <SimpleGrid py={20} cols={2} w={"70%"} px={0}>
           <Flex gap={10}>
-            {" "}
-            <Icon
-              icon="icon-park-solid:right-one"
-              style={{ color: "#64ffda" }}
-            />
+            <span role="img" aria-label="brain">
+              🧠
+            </span>
             <Text size="sm" c={"#64ffda"}>
-              Coding
+              Solving problems and optimizing workflows
             </Text>
           </Flex>
           <Flex gap={10}>
-            <Icon
-              icon="icon-park-solid:right-one"
-              style={{ color: "#64ffda" }}
-            />
+            <span role="img" aria-label="globe">
+              🌐
+            </span>
             <Text size="sm" c={"#64ffda"}>
-              Problem Solving
+              Full-stack web development
             </Text>
           </Flex>
           <Flex gap={10}>
-            <Icon
-              icon="icon-park-solid:right-one"
-              style={{ color: "#64ffda" }}
-            />
+            <span role="img" aria-label="magnifying glass">
+              🔍
+            </span>
             <Text size="sm" c={"#64ffda"}>
-              Competitive Programming
-            </Text>
-          </Flex>
-
-          <Flex gap={10}>
-            <Icon
-              icon="icon-park-solid:right-one"
-              style={{ color: "#64ffda" }}
-            />
-            <Text size="sm" c={"#64ffda"}>
-              Mentoring
+              Debugging and refactoring legacy systems
             </Text>
           </Flex>
           <Flex gap={10}>
-            <Icon
-              icon="icon-park-solid:right-one"
-              style={{ color: "#64ffda" }}
-            />
+            <span role="img" aria-label="tools">
+              🛠
+            </span>
             <Text size="sm" c={"#64ffda"}>
-              Team Management
+              Working on real-world client projects
             </Text>
           </Flex>
           <Flex gap={10}>
-            <Icon
-              icon="icon-park-solid:right-one"
-              style={{ color: "#64ffda" }}
-            />
+            <span role="img" aria-label="speech bubble">
+              💬
+            </span>
             <Text size="sm" c={"#64ffda"}>
-              Leadership
+              Mentoring and collaborating with developers
             </Text>
           </Flex>
         </SimpleGrid>

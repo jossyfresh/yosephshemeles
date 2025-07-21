@@ -31,11 +31,15 @@ const slugs = [
   "visualstudiocode",
   "androidstudio",
   "figma",
+  "svelte",
+  "sveltekit",
+  "tailwindcss",
+  "web3",
 ];
 
 export function IconCloudDemo() {
   return (
-    <div className="relative flex h-full w-[1000px] max-w-[100rem] items-center justify-center overflow-hidden rounded-lg  bg-background px-20 pb-20 pt-8 ">
+    <div className="relative flex h-full w-[1600px] max-w-[100rem] items-center justify-center overflow-hidden rounded-lg bg-background px-20 pb-20 pt-8 ">
       <IconCloud iconSlugs={slugs} />
     </div>
   );

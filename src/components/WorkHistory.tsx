@@ -5,7 +5,7 @@ import { TabsDemo } from "./Tabs";
 
 export default function WorkHistory() {
   return (
-    <Stack id="Experience">
+    <Stack id="Experience" py={120}>
       <Flex gap={20} align={"center"} px={30}>
         <Flex align={"end"} gap={12}>
           <Flex gap={0}>
@@ -16,8 +16,7 @@ export default function WorkHistory() {
                 style={{
                   color: "#e6f1ff",
                   fontSize: "24px",
-                }}
-              >
+                }}>
                 Where I&apos;ve Worked
               </span>
             </Text>
@@ -28,8 +27,7 @@ export default function WorkHistory() {
             w={400}
             style={{
               border: "0.5px solid #303C55",
-            }}
-          ></Stack>
+            }}></Stack>
         </Stack>
       </Flex>
       <Stack py={30}>

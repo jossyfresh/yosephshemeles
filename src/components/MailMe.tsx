@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function MailMe() {
   return (
-    <Stack align="center" gap={40} id="contact">
+    <Stack align="center" gap={40} id="contact" py={120}>
       <Flex>
         <Flex>
           <Text c={"#64ffda"} size="20px">
@@ -14,8 +14,7 @@ export default function MailMe() {
               style={{
                 paddingLeft: "7px",
                 fontSize: "20px",
-              }}
-            >
+              }}>
               What&apos;s Next?
             </span>
           </Text>
@@ -32,8 +31,7 @@ export default function MailMe() {
           c={"#a8b2d1"}
           style={{
             textAlign: "center",
-          }}
-        >
+          }}>
           My inbox is always open. Whether you have a question or just want to
           say hello, I&apos;ll try my best to get back to you! Feel free to mail
           me about any relevant job updates.
@@ -47,8 +45,7 @@ export default function MailMe() {
           style={{
             fontSize: "18px",
             border: "1px solid #64ffda",
-          }}
-        >
+          }}>
           Mail Me
         </Button>
       </Link>

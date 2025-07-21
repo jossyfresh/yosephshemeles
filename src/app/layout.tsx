@@ -48,6 +48,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap"
           rel="stylesheet"
         />
+        <style>{`html { scroll-behavior: smooth; }`}</style>
       </head>
       <body
         className={JetBrains.className}

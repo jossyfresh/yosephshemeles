@@ -9,7 +9,7 @@ export function TabsDemo() {
   const [active, setActive] = useState(0);
   const tabs = [
     {
-      title: "African To Sillcon Valley",
+      title: "African to Silicon Valley (A2SV)",
       value: "A2SV",
       content: (
         <Stack
@@ -19,23 +19,13 @@ export function TabsDemo() {
           gap={30}
           style={{
             borderRadius: "10px",
-          }}
-        >
+          }}>
           <Stack gap={5} px={4}>
-            <Text size="22px" c={"#e6f1ff"}>
-              Software Developer and Mentor{" "}
-              <span
-                style={{
-                  color: "#64ffda",
-                }}
-              >
-                <a href="https://a2sv.org" target="_blank">
-                  @A2SV
-                </a>
-              </span>
+            <Text style={{ lineHeight: "1.3" }} size="22px" c={"#e6f1ff"}>
+              Software Developer & Head of Education{" "}
             </Text>
             <Text size="sm" c={"#64ffda"}>
-              Dec 2022 - Present
+              Dec 2022 - May 2025
             </Text>
           </Stack>
           <Stack w={"100%"} pl={20}>
@@ -48,9 +38,9 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Interend in as a software developer and mentor at A2SV, a
-                  company that provides opportunities for African developers to
-                  learn and grow in the tech industry.
+                  Led A2SV’s education track by organizing and conducting
+                  technical interviews, mock sessions, and DSA mentorship for
+                  dozens of students.
                 </Text>
               </Stack>
             </Flex>
@@ -63,8 +53,8 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Participated in the development of a web-based platform for
-                  community of A2SV
+                  Mentored students in advanced algorithms and competitive
+                  programming to prepare for FAANG-style interviews.
                 </Text>
               </Stack>
             </Flex>
@@ -77,9 +67,8 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Delivered lectures on data structures and algorithms,
-                  improving participants&apos; understanding and application of
-                  core concepts.
+                  Built and maintained internal tools used by students and
+                  mentors using React, Node.js, and Firebase.
                 </Text>
               </Stack>
             </Flex>
@@ -92,8 +81,22 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Facilitated workshops and discussion sessions, fostering a
-                  collaborative learning environment within the community.
+                  Facilitated live coding sessions and mock interviews, focusing
+                  on real-time problem-solving and communication.
+                </Text>
+              </Stack>
+            </Flex>
+            <Flex gap={10} w={"100%"}>
+              <Stack w={"4%"} h={20}>
+                <Icon
+                  icon="icon-park-solid:right-one"
+                  style={{ color: "#64ffda" }}
+                />
+              </Stack>
+              <Stack w={"96%"}>
+                <Text c={"#a8b2d1"} size="sm">
+                  <b>Tech Stack:</b> Python, JavaScript, React, Firebase, Git,
+                  Data Structures & Algorithms
                 </Text>
               </Stack>
             </Flex>
@@ -112,14 +115,13 @@ export function TabsDemo() {
           gap={30}
           style={{
             borderRadius: "10px",
-          }}
-        >
+          }}>
           <Stack gap={5} px={4}>
             <Text size="22px" c={"#e6f1ff"}>
-              Software Engineering Intern{" "}
+              Software Engineering Intern
             </Text>
             <Text size="sm" c={"#64ffda"}>
-              July 2023 - Present
+              Apr 2023 – Nov 2023
             </Text>
           </Stack>
           <Stack w={"100%"} pl={20}>
@@ -132,8 +134,8 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Led a team of web developer to build a web-based platform for
-                  interview preparation purpose
+                  Developed and maintained frontend components for Eskalate’s
+                  platform using React.js, Tailwind CSS, and TypeScript.
                 </Text>
               </Stack>
             </Flex>
@@ -146,9 +148,8 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Participated in the development of a web-based platform for
-                  connceting afirca&apos;s talented developers with the
-                  world&apos;s top tech companies
+                  Collaborated in a cross-functional agile team with designers
+                  and backend developers to implement new features.
                 </Text>
               </Stack>
             </Flex>
@@ -161,8 +162,8 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Learned and worked in new technologies and tools to improve my
-                  skills and knowledge in software development.
+                  Wrote clean, modular code, and optimized UI for mobile and
+                  desktop platforms.
                 </Text>
               </Stack>
             </Flex>
@@ -175,8 +176,22 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Collaborated with team members to develop new features and
-                  improve existing ones.
+                  Integrated REST APIs, handled state with React Query, and
+                  improved load times across the app.
+                </Text>
+              </Stack>
+            </Flex>
+            <Flex gap={10} w={"100%"}>
+              <Stack w={"4%"} h={20}>
+                <Icon
+                  icon="icon-park-solid:right-one"
+                  style={{ color: "#64ffda" }}
+                />
+              </Stack>
+              <Stack w={"96%"}>
+                <Text c={"#a8b2d1"} size="sm">
+                  <b>Tech Stack:</b> React, Tailwind CSS, TypeScript, React
+                  Query, REST APIs
                 </Text>
               </Stack>
             </Flex>
@@ -185,8 +200,8 @@ export function TabsDemo() {
       ),
     },
     {
-      title: "Lela Tech",
-      value: "Lela",
+      title: "Endubis Blockchain Solution",
+      value: "Endubis",
       content: (
         <Stack
           w={500}
@@ -195,14 +210,13 @@ export function TabsDemo() {
           gap={30}
           style={{
             borderRadius: "10px",
-          }}
-        >
+          }}>
           <Stack gap={5} px={4}>
             <Text size="22px" c={"#e6f1ff"}>
-              Front-End Web Developer
+              Full-Stack & Web3 Developer
             </Text>
             <Text size="sm" c={"#64ffda"}>
-              June 2024 - Present
+              June 2024 - May 2025
             </Text>
           </Stack>
           <Stack w={"100%"} pl={20}>
@@ -215,7 +229,9 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Participated in the development of a crypto currency wallet
+                  Designed and developed a Telegram bot integrated with Endubis
+                  Wallet to enable blockchain-based transactions, user
+                  onboarding, and verification.
                 </Text>
               </Stack>
             </Flex>
@@ -228,8 +244,31 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Collaborated with team members to develop new features and
-                  improve existing ones.
+                  Built the backend using Node.js, handling wallet transactions,
+                  smart contract interactions, and Cardano blockchain
+                  integration via Web3 libraries.
+                </Text>
+              </Stack>
+            </Flex>
+            <Flex gap={10} w={"100%"}>
+              <Stack w={"4%"} h={20}>
+                <Icon
+                  icon="icon-park-solid:right-one"
+                  style={{ color: "#64ffda" }}
+                />
+              </Stack>
+            </Flex>
+            <Flex gap={10} w={"100%"}>
+              <Stack w={"4%"} h={20}>
+                <Icon
+                  icon="icon-park-solid:right-one"
+                  style={{ color: "#64ffda" }}
+                />
+              </Stack>
+              <Stack w={"96%"}>
+                <Text c={"#a8b2d1"} size="sm">
+                  Built lightweight admin dashboards and assisted with frontend
+                  improvements using React.
                 </Text>
               </Stack>
             </Flex>
@@ -242,8 +281,23 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Learned and worked in new technologies and tools to improve my
-                  skills and knowledge in software development.
+                  Collaborated closely with the blockchain engineering team to
+                  integrate with Cardano nodes and test smart contract behavior
+                  in staging environments.
+                </Text>
+              </Stack>
+            </Flex>
+            <Flex gap={10} w={"100%"}>
+              <Stack w={"4%"} h={20}>
+                <Icon
+                  icon="icon-park-solid:right-one"
+                  style={{ color: "#64ffda" }}
+                />
+              </Stack>
+              <Stack w={"96%"}>
+                <Text c={"#a8b2d1"} size="sm">
+                  <b>Tech Stack:</b> Node.js, Express, Web3.js, Cardano
+                  Blockchain, Telegram Bot API, React, REST APIs
                 </Text>
               </Stack>
             </Flex>
@@ -252,8 +306,8 @@ export function TabsDemo() {
       ),
     },
     {
-      title: "GDSC",
-      value: "GDSC",
+      title: "Freelancer (Upwork)",
+      value: "Freelance",
       content: (
         <Stack
           w={500}
@@ -262,20 +316,13 @@ export function TabsDemo() {
           gap={30}
           style={{
             borderRadius: "10px",
-          }}
-        >
+          }}>
           <Stack gap={5} px={4}>
-            <Text
-              size="22px"
-              c={"#e6f1ff"}
-              style={{
-                lineHeight: "1.3",
-              }}
-            >
-              Google Developer Students Club Web Dev Mentor{" "}
+            <Text style={{ lineHeight: "1.3" }} size="22px" c={"#e6f1ff"}>
+              Full-Stack & Independent Software Engineer
             </Text>
             <Text size="sm" c={"#64ffda"}>
-              Nov 2023 - May 2024
+              2022 – Present
             </Text>
           </Stack>
           <Stack w={"100%"} pl={20}>
@@ -288,8 +335,9 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Gave Lectures on Web Development and React Library to 100+
-                  students
+                  Top Rated freelancer on Upwork with 10+ successful projects
+                  completed for clients across the US, Canada, Germany, and
+                  more.
                 </Text>
               </Stack>
             </Flex>
@@ -302,8 +350,8 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Also mentored students on how to build projects using React
-                  library and other web technologies
+                  Delivered high-quality, scalable full-stack solutions using
+                  React, Next.js, Node.js, Express, Laravel, .NET, and MongoDB.
                 </Text>
               </Stack>
             </Flex>
@@ -316,8 +364,24 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Gave advices to students on how to improve their skills and
-                  how to get started in the tech industry
+                  Built and deployed RESTful APIs, admin dashboards,
+                  authentication flows, and mobile-responsive UIs.
+                </Text>
+              </Stack>
+            </Flex>
+
+            <Flex gap={10} w={"100%"}>
+              <Stack w={"4%"} h={20}>
+                <Icon
+                  icon="icon-park-solid:right-one"
+                  style={{ color: "#64ffda" }}
+                />
+              </Stack>
+              <Stack w={"96%"}>
+                <Text c={"#a8b2d1"} size="sm">
+                  Maintained excellent client satisfaction ratings and built
+                  long-term relationships by delivering clean, maintainable code
+                  and consistent communication.
                 </Text>
               </Stack>
             </Flex>
@@ -330,8 +394,8 @@ export function TabsDemo() {
               </Stack>
               <Stack w={"96%"}>
                 <Text c={"#a8b2d1"} size="sm">
-                  Help a group of students to build a project using React for a
-                  hackathon
+                  <b>Tech Stack:</b> JavaScript, React, Node.js, Express, .NET,
+                  Laravel, Svelte, REST APIs, Git, Figma
                 </Text>
               </Stack>
             </Flex>

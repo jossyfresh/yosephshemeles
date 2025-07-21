@@ -13,8 +13,11 @@ export default function Navbar() {
       align={"center"}
       style={{
         zIndex: 1000,
-      }}
-    >
+        position: "sticky",
+        top: 0,
+        background: "#0a192f",
+        boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+      }}>
       <Link href="/">
         <Stack>
           <Image src={"/logo3.svg"} alt="" w={50} h={50} />
@@ -25,8 +28,7 @@ export default function Navbar() {
         align={"center"}
         style={{
           zIndex: 1000,
-        }}
-      >
+        }}>
         <Link href="#about">
           <Flex gap={5}>
             <Text c={"#64ffda"} size={"xs"} style={{}}>
@@ -34,8 +36,7 @@ export default function Navbar() {
             </Text>
             <Text
               className="text-[#e6f1ff] hover:text-[#64ffda] hover:cursor-pointer"
-              size={"14px"}
-            >
+              size={"14px"}>
               About
             </Text>
           </Flex>
@@ -47,8 +48,7 @@ export default function Navbar() {
             </Text>
             <Text
               className="text-[#e6f1ff] hover:text-[#64ffda] hover:cursor-pointer"
-              size={"14px"}
-            >
+              size={"14px"}>
               Experience
             </Text>
           </Flex>
@@ -60,8 +60,7 @@ export default function Navbar() {
             </Text>
             <Text
               className="text-[#e6f1ff] hover:text-[#64ffda] hover:cursor-pointer"
-              size={"14px"}
-            >
+              size={"14px"}>
               Projects
             </Text>
           </Flex>
@@ -73,21 +72,21 @@ export default function Navbar() {
             </Text>
             <Text
               className="text-[#e6f1ff] hover:text-[#64ffda] hover:cursor-pointer"
-              size={"14px"}
-            >
+              size={"14px"}>
               Contact
             </Text>
           </Flex>
         </Link>
-        <Link href="https://drive.google.com/file/d/10qoeY7TlbAChHpFP8VP6R-ol8FWbk9sN/view?usp=sharing">
+        <Link
+          target="_blank"
+          href="https://drive.google.com/file/d/14avzC6BqTs0jNcNoDtGovCASrwQ73ggL/view?usp=sharing">
           <Button
             h={40}
             variant="outline"
             c={"#64ffda"}
             style={{
               border: "1px solid #64ffda",
-            }}
-          >
+            }}>
             Resume
           </Button>
         </Link>

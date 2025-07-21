@@ -7,13 +7,10 @@ export default function Hero() {
     <Stack gap={50}>
       <Stack gap={30}>
         <Text c={"#64ffda"} size="20px" className="font-SFMonoRegular">
-          Hello, my name is
+          Hi, I&apos;m
         </Text>
         <Text c={"#ccd6f6"} size="50px" fw={800}>
           Yoseph Shemeles
-        </Text>
-        <Text c={"#8892b0"} size="50px" fw={800}>
-          I love exploring new things!
         </Text>
       </Stack>
       <Stack>
@@ -24,11 +21,12 @@ export default function Hero() {
           fw={400}
           style={{
             lineHeight: "1.5",
-          }}
-        >
-          I&apos;m a Final Year Software Engineering Student at Addis Ababa
-          Science and Technology University (AASTU) Addis Ababa, Ethiopia.
-          Primarily interested in Full-Stack Web Development and ML.
+          }}>
+          A passionate Software Engineer who loves building, learning, and
+          solving real-world problems. I&apos;m especially focused on{" "}
+          <b style={{ color: "#64ffda" }}>Full-Stack Web Development</b> and{" "}
+          <b style={{ color: "#64ffda" }}>AI Automation</b>, and I enjoy turning
+          ideas into practical, user-friendly products.
         </Text>
         <Text
           w={"70%"}
@@ -37,9 +35,9 @@ export default function Hero() {
           fw={400}
           style={{
             lineHeight: "1.5",
-          }}
-        >
-          I enjoy learning new skills and implementing them in real life!
+          }}>
+          I thrive on fast learning, shipping real projects, and working on
+          things that matter.
         </Text>
       </Stack>
       <Link href={"https://www.upwork.com/freelancers/~0102e0b85eb469f383"}>
@@ -50,8 +48,7 @@ export default function Hero() {
           c={"#64ffda"}
           style={{
             border: "1px solid #64ffda",
-          }}
-        >
+          }}>
           Hire Me
         </Button>
       </Link>
